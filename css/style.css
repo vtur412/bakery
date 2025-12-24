@@ -94,6 +94,8 @@ h2 {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Button */
@@ -101,9 +103,11 @@ ul {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
   border-radius: 8px;
-  border: 1px solid var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
   cursor: pointer;
   font-weight: 600;
+  font-size: 18px;
+  padding: 16px 32px;
 }
 
 .button-primary:hover {
@@ -119,7 +123,28 @@ ul {
 
 .nav-link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 64px;
 }
 
 /* Hero section */
@@ -140,14 +165,21 @@ ul {
 }
 
 /* Advantages section */
-.advantages-list {
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
-  font-weight: 300;
-  font-size: 20px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
+  color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20px;
 }
@@ -164,6 +196,16 @@ ul {
 
 /* Traditions section */
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 700px;
+}
+
 .traditions-section {
   padding-top: 96px;
 }
@@ -175,6 +217,10 @@ ul {
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
+}
+
+.traditions-text.limited {
+  max-width: 335px;
 }
 
 .traditions-text .uppercase {
@@ -195,6 +241,16 @@ ul {
 
 /* Formats section */
 
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-list-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -207,6 +263,12 @@ ul {
 .formats-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+.formats-card {
+  border: 1px solid black; /* remove */
+  border-radius: 16px;
+  padding: 24px;
 }
 
 /* Contacts section */
