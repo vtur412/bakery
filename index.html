@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -28,7 +28,10 @@
               <li><a class="nav-link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button-primary modal-btn-open" type="button">
+          <button
+            class="button-primary modal-btn-open header-btn"
+            type="button"
+          >
             Замовити дзвінок
           </button>
         </div>
@@ -175,7 +178,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button">
+            <button class="carousel-button next">
               <svg class="carousel-arrow">
                 <use href="./icons/icons.svg#icon-arrow"></use>
               </svg>
@@ -285,7 +288,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hiden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
       </div>
