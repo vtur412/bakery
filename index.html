@@ -196,6 +196,52 @@
               <p class="contacts-text">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
+              <form class="order-form" name="contact-form" autocomplete="off">
+                <div class="order-form-field">
+                  <label class="visually-hidden" for="user-name">Ім’я</label>
+                  <input
+                    id="user-name"
+                    class="order-form-input"
+                    type="text"
+                    name="user-name"
+                    placeholder="Ім’я"
+                  />
+                </div>
+
+                <div class="order-form-field">
+                  <label class="visually-hidden" for="user-tel">Телефон</label>
+                  <input
+                    id="user-tel"
+                    class="order-form-input"
+                    type="tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="order-form-field">
+                  <label class="visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    id="user-email"
+                    class="order-form-input"
+                    type="email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+                <button class="button-primary form-btn" type="submit">
+                  Замовити дзвінок
+                </button>
+              </form>
+
+              <p class="form-policy-text">
+                Натискаючи на кнопку я погоджуюсь <br />
+                <a class="form--policy-link" href="#">
+                  з політикою конфіденційності
+                </a>
+              </p>
             </div>
             <iframe
               class="contacts-map"
@@ -288,11 +334,11 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hiden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
-        <h2 class="section-title modal-title">Замовити дзвінок</h2>
-        <p class="modal-text">
+        <h2 class="section-title form-title">Замовити дзвінок</h2>
+        <p class="form-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
         <form class="order-form" name="contact-form" autocomplete="off">
@@ -335,9 +381,9 @@
           </button>
         </form>
 
-        <p class="modal-policy-text">
+        <p class="form-policy-text">
           Натискаючи на кнопку я погоджуюсь <br />
-          <a class="modal-policy-link" href="#">з політикою конфіденційності</a>
+          <a class="form--policy-link" href="#">з політикою конфіденційності</a>
         </p>
       </div>
     </div>
