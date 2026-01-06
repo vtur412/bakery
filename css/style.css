@@ -551,12 +551,17 @@ ul {
 
 .modal {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0;
   width: 100%;
   max-width: 880px;
   height: 100%;
   max-height: 880px;
   border-radius: 32px;
   background-color: var(--color-primary-light);
+  overflow-y: auto;
 }
 
 .modal-btn-close {
@@ -565,7 +570,101 @@ ul {
   top: 40px;
 }
 
+.modal-title {
+  margin-bottom: 8px;
+}
+
+.modal-text {
+  color: var(--color-brand-dark);
+  margin: 0;
+}
+
+.modal-policy-text {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+}
+
+.modal-policy-link {
+  font-size: 12px;
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
+
 .backdrop.is-hiden {
   opacity: 0;
   visibility: hidden;
+}
+
+/* Form */
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 72px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.order-form-input {
+  font-size: 16px;
+  line-height: 1.17;
+  width: 100%;
+  padding: 16px 42px;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary-dark);
+  background-color: transparent;
+  outline: none;
+}
+
+.order-form-input:focus {
+  outline: 1px solid var(--color-brand-normal);
+}
+
+.order-form-input:focus::-webkit-input-placeholder {
+  color: var(--color-primary-dark);
+}
+
+.order-form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
+}
+
+.order-form-input:focus:-ms-input-placeholder {
+  color: var(--color-primary-dark);
+}
+
+.order-form-input:focus::-ms-input-placeholder {
+  color: var(--color-primary-dark);
+}
+
+.order-form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.order-form-input::-webkit-input-placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.order-form-input::-moz-placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.order-form-input:-ms-input-placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.order-form-input::-ms-input-placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.order-form-input::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-btn {
+  align-self: center;
 }
