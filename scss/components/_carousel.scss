@@ -1,0 +1,33 @@
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.carousel-arrow {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primary-light);
+}

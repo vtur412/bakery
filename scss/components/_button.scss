@@ -1,0 +1,21 @@
+.button-primary {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-normal);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-normal);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 32px;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.button-primary:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+.button-primary.header-btn:hover {
+  background-color: var(--color-primary-light);
+  border-color: transparent;
+}

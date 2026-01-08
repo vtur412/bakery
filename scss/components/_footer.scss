@@ -1,0 +1,92 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url(../images/decor-bread-small.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url(../images/decor-bread-large.png);
+  width: 380px;
+  height: 187px;
+  right: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-nav-logo {
+  flex-basis: 50%;
+}
+
+.footer-nav-list {
+  flex-basis: 50%;
+}
+.footer-nav-link:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-address-list {
+  flex-basis: 50%;
+}
+
+.footer-address-info {
+  flex-basis: 50%;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.address-link-social {
+  display: flex;
+  gap: 22px;
+}
+
+.address-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-primary-light);
+  transition: fill 0.3s;
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
+.address-copyright {
+  color: #a18268;
+  font-size: 14px;
+}
