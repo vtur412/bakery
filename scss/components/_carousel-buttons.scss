@@ -12,22 +12,22 @@
   margin: 0;
   cursor: pointer;
   transition: background-color 0.3s;
-}
 
-.carousel-button.next {
-  transform: rotate(180deg);
-}
+  &:hover {
+    background-color: var(--color-primary-dark);
 
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-}
+    .carousel-button__arrow {
+      fill: var(--color-primary-light);
+    }
+  }
 
-.carousel-arrow {
-  width: 16px;
-  height: 16px;
-  fill: var(--color-primary-dark);
-}
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-primary-dark);
+  }
 
-.carousel-button:hover .carousel-arrow {
-  fill: var(--color-primary-light);
+  &__next {
+    transform: rotate(180deg);
+  }
 }

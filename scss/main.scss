@@ -1,19 +1,28 @@
+// Base
+@import "../scss/base";
+
+// Utils
 @import "../scss/utils/_fonts.scss";
+@import "../scss/utils/texts";
 @import "../scss/utils/utils";
 @import "../scss/utils/variables";
 
-@import "../scss/base";
-
-@import "../scss/components/advantages-section";
-@import "../scss/components/button";
-@import "../scss/components/carousel";
-@import "../scss/components/chefs-section";
-@import "../scss/components/contacts-section";
-@import "../scss/components/footer";
-@import "../scss/components/form";
-@import "../scss/components/formats-section";
-@import "../scss/components/header";
-@import "../scss/components/hero-section";
+// Components
+@import "../scss/components/buttons";
+@import "../scss/components/carousel-buttons";
+@import "../scss/components/chef-card";
+@import "../scss/components/format-card";
 @import "../scss/components/link";
-@import "../scss/components/modal";
-@import "../scss/components/traditions-container";
+
+// Layout
+@import "../scss/layout/advantages-section";
+@import "../scss/layout/chefs-section";
+@import "../scss/layout/contacts-section";
+@import "../scss/layout/footer";
+@import "../scss/layout/form";
+@import "../scss/layout/formats-section";
+@import "../scss/layout/header";
+@import "../scss/layout/hero-section";
+@import "../scss/layout/modal";
+@import "../scss/layout/section";
+@import "../scss/layout/traditions-container";
