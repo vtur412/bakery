@@ -25,12 +25,20 @@
   border-radius: 32px;
   background-color: var(--color-primary-light);
   overflow-y: auto;
-}
 
-.modal-btn-close {
-  position: absolute;
-  right: 40px;
-  top: 40px;
+  &__button-close {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+  }
+
+  &__icon-cross {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .backdrop.is-hidden {

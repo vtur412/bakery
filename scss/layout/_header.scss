@@ -24,4 +24,19 @@
     justify-content: center;
     gap: 64px;
   }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__icon-burger-menu {
+    width: 20px;
+    height: 14px;
+    fill: var(--color-primary-light);
+  }
 }
