@@ -38,6 +38,11 @@
   &__icon-cross {
     width: 24px;
     height: 24px;
+    fill: var(--color-primary-dark);
+
+    &:hover {
+      scale: 1.01;
+    }
   }
 }
 

@@ -29,16 +29,25 @@
             </ul>
           </nav>
           <button
-            class="button-primary js-modal-btn-open header-btn"
+            class="button-primary js-modal-btn-open header__btn"
             type="button"
           >
             Замовити дзвінок
           </button>
-          <button class="header__button" type="button">
+          <button class="header__burger-menu js-menu-btn-open" type="button">
             <svg class="header__icon-burger-menu">
               <use href="./icons/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
+
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu__button-close js-menu-btn-close"
+              type="button"
+            >
+              CLOSE
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -54,20 +63,22 @@
 
       <section class="advantages-section" id="advantages-section">
         <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages-section__list">
-            <li class="advantages-section__item">Великий попит на ринку!</li>
-            <li class="advantages-section__item">
-              Доступні за бюджетом формати
-            </li>
-            <li class="advantages-section__item">
-              Досвідчена управлінська команда
-            </li>
-          </ul>
+          <div class="advatages-section__container">
+            <h2 class="visually-hidden">Наші переваги</h2>
+            <ul class="advantages-section__list">
+              <li class="advantages-section__item">Великий попит на ринку!</li>
+              <li class="advantages-section__item">
+                Доступні за бюджетом формати
+              </li>
+              <li class="advantages-section__item">
+                Досвідчена управлінська команда
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="traditions-section section" id="traditions-section">
+      <!-- <section class="traditions-section section" id="traditions-section">
         <div class="container">
           <div class="traditions-section__container">
             <div class="traditions-section__content">
@@ -94,9 +105,9 @@
             <img src="./images/baker-man.jpg" alt="чоловік-пекар" />
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="chefs-section section" id="chefs-section">
+      <!-- <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2
             class="chefs-section__title section__title section__title--centered"
@@ -151,9 +162,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="formats-section section" id="formats-section">
+      <!-- <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2
             class="formats-section__title section__title section__title--centered"
@@ -226,9 +237,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="contacts-section section" id="contacts-section">
+      <!-- <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__container">
             <div class="contacts-section__form">
@@ -312,10 +323,10 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -393,9 +404,9 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__button-close js-modal-btn-close" type="button">
           <svg class="modal__icon-cross">
@@ -464,8 +475,9 @@
           >
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/scrips.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
