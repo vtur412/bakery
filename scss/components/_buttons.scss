@@ -1,4 +1,5 @@
 .button-primary {
+  display: block;
   color: var(--color-primary-light);
   background-color: var(--color-brand-normal);
   border-radius: 8px;
@@ -15,7 +16,7 @@
   background-color: transparent;
 }
 
-.button-primary.header-btn:hover {
+.button-primary.full-bg__btn:hover {
   background-color: var(--color-primary-light);
   border-color: transparent;
 }
