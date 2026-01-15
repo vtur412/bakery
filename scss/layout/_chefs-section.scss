@@ -1,7 +1,11 @@
 .chefs-section {
   &__title {
-    margin: 0 auto 80px auto;
+    margin: 0 auto 24px auto;
     position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 80px;
+    }
 
     &::before,
     &::after {
