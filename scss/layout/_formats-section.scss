@@ -18,6 +18,13 @@
     }
   }
 
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
   // &__list {
   //   display: flex;
   //   gap: 20px;

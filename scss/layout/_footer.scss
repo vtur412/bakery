@@ -6,38 +6,62 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
-  &__::before,
-  &__::after {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     background-repeat: no-repeat;
     bottom: 0;
   }
 
-  &__::before {
+  &::before {
     background-image: url(../images/decor-bread-small.png);
-    width: 180px;
-    height: 120px;
+    width: 100px;
+    height: 210px;
+    top: 50px;
     left: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 150px;
+    }
   }
 
-  &__::after {
+  &::after {
     background-image: url(../images/decor-bread-large.png);
     width: 380px;
     height: 187px;
-    right: 0;
+    right: -280px;
+    bottom: -109px;
   }
 
   &__container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 
   &__nav {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     flex-basis: 50%;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: center;
+      text-align: start;
+    }
 
     &-logo {
       flex-basis: 50%;
@@ -54,8 +78,17 @@
 
   &__address {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     flex-basis: 50%;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: start;
+    }
 
     &-list {
       flex-basis: 50%;
@@ -73,7 +106,12 @@
 
     &-link-social {
       display: flex;
+      justify-content: center;
       gap: 22px;
+
+      @media screen and (min-width: $bp-tablet) {
+        justify-content: flex-start;
+      }
     }
 
     &-icon {

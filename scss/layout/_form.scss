@@ -1,11 +1,16 @@
 .order-form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-top: 72px;
+  gap: 24px;
+  padding-top: 24px;
   margin-bottom: 24px;
   max-width: 600px;
   width: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 72px;
+    gap: 32px;
+  }
 
   &__title {
     margin-bottom: 8px;
@@ -26,6 +31,11 @@
       text-align: center;
       font-size: 12px;
       margin: 0;
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+      }
     }
 
     &-link {
