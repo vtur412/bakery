@@ -44,13 +44,14 @@
   }
 
   &__map {
-    border-radius: 16px;
+    border-radius: 0;
     flex-shrink: 0;
     height: 175px;
     margin: 0 -20px;
 
     @media screen and (min-width: $bp-tablet) {
       margin: 0;
+      border-radius: 16px;
       width: 350px;
       height: 500px;
     }
